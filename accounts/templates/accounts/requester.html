@@ -8,8 +8,8 @@
                 <div class="card card-body">
                     <h5>Requester:</h5>
                     <hr>
-                    <a class="btn btn-primary btn-sm btn-block" href="">Update Requester </a>
-                    <a class="btn btn-primary btn-sm btn-block" href="">Delete Requester </a>
+                    <a class="btn btn-info btn-sm btn-block" href="">Update Requester </a>
+                    <a class="btn btn-danger btn-sm btn-block" href="">Delete Requester </a>
                 </div>  
         </div>
         <div class="col-md">
@@ -55,8 +55,8 @@
                         <td>  {{status.products}} </td>
                         <td>  {{status.products.date_created}} </td> 
                         <td>  {{status.status}} </td>
-                        <td><a href="">Update</a></td>
-                        <td><a href="">Delete</a></td>  
+                        <td><a class="btn btn-sm btn-info" href="">Update</a></td>
+                        <td><a class="btn btn-sm btn-danger" href="">Delete</a></td>  
                     </tr>  
 
                     {% endfor %}
