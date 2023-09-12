@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'djongo'
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'Supply_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'mydatabase',   # Use the same database name as specified when creating the MongoDB user
+        'USER': 'ralphii',   # MongoDB username
+        'PASSWORD': 'ralph123',   # MongoDB password
+        'HOST': 'localhost',    # MongoDB host (can be a different host if MongoDB is not on the same server)
+        'PORT': 27017,          # MongoDB port (default is 27017)
     }
 }
 
