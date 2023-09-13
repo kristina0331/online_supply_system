@@ -83,16 +83,26 @@ WSGI_APPLICATION = 'Supply_system.wsgi.application'
 #     }
 # }
 
+# jelyn database
 DATABASES = {
 'default': {
       'ENGINE': 'djongo',
-      'NAME':  'mydatabase',
-      'CLIENT': {
-            'host': 'localhost',
-            'port': 27017,
+      'NAME':  'mydatabase',  
+      'USERNAME': 'lalyang',
+      'PASSWORD': 'lalyang123',
+      'HOST': 'localhost',
+      'PORT': 27017,
       }
-    }
-}
+# =======
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'mydatabase',   # Use the same database name as specified when creating the MongoDB user
+#         'USER': 'ralphii',   # MongoDB username
+#         'PASSWORD': 'ralph123',   # MongoDB password
+#         'HOST': 'localhost',    # MongoDB host (can be a different host if MongoDB is not on the same server)
+#         'PORT': 27017,          # MongoDB port (default is 27017)
+ }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
