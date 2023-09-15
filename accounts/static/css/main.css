@@ -85,7 +85,6 @@
     font-weight: var(--bs-body-font-weight);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    height: auto;
     
   }
   .navbar {
@@ -253,13 +252,16 @@
     .pr {
         font-size: 4opx;
         font-family: serif;
+        display: flex;
+        align-content: center;
     }
     .container {
         display: flex;
         color: #000;
         display: flex;
         align-content: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 4px !important;
     }
     .arrow_img {
         height: 40px;
@@ -268,44 +270,106 @@
     }
 
     /* dropdown */
-    .dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .dropdown-content a:hover {background-color: #f1f1f1}
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
+   .dropdown {
+    padding-top: 2rem;
+    padding-left: 1rem;
+   }
+   .btn btn-secondary dropdown-toggle{
+    padding: 2rem;
+   }
+   .btn-secondary {
+    color: black;
+    border: 1px solid black;
+    border-radius: 0%;
+    background-color: transparent !important;
+  }
+  .dropdown-menu {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease; /* Add a transition for background-color */
+  }
+
+  .dropdown-menu:hover {
+    background-color: transparent !important;
+  }
+
+  .dropdown-item {
+    color: black !important;
+    transition: color 0.3s ease; /* Add a transition for text color */
+    border: 1px solid black;
+    border-radius: 0%;
+    background-color:  #6C757D;
+  }
+
+  .dropdown-menu:hover .dropdown-item {
+    color: black !important;
+  }
     /* end of dropdown */
+
+    /* form
+    .form-control {
+      display: table-caption;
+      border: 1px solid black;
+      height: auto;
+      width: 500px;
+      color: #000;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+      display: contents;
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding-top: 2rem;
+       border: 2px solid black; 
+  } */
+  .input-group{
+    padding-top: 2rem;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      width: 60%;
+      
+  }
+  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-radius: 0%;
+    border: 1px solid black;
+    border-left: none !important;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group>.input-group-prepend>.input-group-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid;
+  background-color: white;
+}
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0%;
+    border-right: none !important;
+}
+/* table start*/
+
   }

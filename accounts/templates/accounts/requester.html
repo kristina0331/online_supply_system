@@ -42,15 +42,26 @@
               <img class="arrow_img" src="{% static 'images/arrow_right.png' %}" alt="">
             </div>
           </div>
-          <div class="container">
-            <h1 class="pr text-center pt-4">PURCHASE REQUEST</h1>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+          <div class="container-fluid">
+            <div class="container">
+              <h1 class="pr text-center pt-4">PURCHASE REQUEST</h1>  
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose a Department
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Department 1</a>
+                <a class="dropdown-item" href="#">Department 2</a>
+                <a class="dropdown-item" href="#">Add a Department</a>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Purpose:</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+              
             </div>
           </div>
         </div>
