@@ -22,9 +22,14 @@ def home(request):
 
     return render(request, 'accounts/dashboard.html', context)   
 
+<<<<<<< HEAD
 def requester(request, pk_test):
     requester = Requester.objects.get(id=pk_test)
     products = requester.status_set.all()
+=======
+def requester(request,):
+    requester = Requester.objects.all()
+>>>>>>> 482a44bbb6f4fe1d3fa277c70959bb206efebc6b
     context= {'requester': requester, 'products': products}
     return render(request, 'accounts/requester.html', context)
 

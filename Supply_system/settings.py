@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$0$us08g%r@266))x3tyr5_hg0c1&k6u9ak#2zaj=(!!i-d^r+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.28.20.119', '127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'djongo',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'Supply_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,6 +82,26 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# # jelyn database
+# DATABASES = {
+# 'default': {
+#       'ENGINE': 'djongo',
+#       'NAME':  'mydatabase',  
+#       'USERNAME': 'lalyang',
+#       'PASSWORD': 'lalyang123',
+#       'HOST': 'localhost',
+#       'PORT': 27017,
+#       }
+# =======
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'mydatabase',   # Use the same database name as specified when creating the MongoDB user
+#         'USER': 'ralphii',   # MongoDB username
+#         'PASSWORD': 'ralph123',   # MongoDB password
+#         'HOST': 'localhost',    # MongoDB host (can be a different host if MongoDB is not on the same server)
+#         'PORT': 27017,          # MongoDB port (default is 27017)
+#  }
 
 
 # Password validation
