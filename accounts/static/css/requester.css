@@ -462,7 +462,7 @@ table.table td .add {
   visibility: visible;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: baseline !important;
 }
 .cart_icon, .d-flex {
   height: 40px;
