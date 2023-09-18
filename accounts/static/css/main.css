@@ -303,27 +303,6 @@
   .dropdown-menu:hover .dropdown-item {
     color: black !important;
   }
-    /* end of dropdown */
-
-    /* form
-    .form-control {
-      display: table-caption;
-      border: 1px solid black;
-      height: auto;
-      width: 500px;
-      color: #000;
-    }
-    .form-group {
-      margin-bottom: 1rem;
-      display: contents;
-      display: flex;
-      align-items: center;
-      align-content: space-between;
-      flex-wrap: wrap;
-      margin: 0;
-      padding-top: 2rem;
-       border: 2px solid black; 
-  } */
   .input-group{
     padding-top: 2rem;
       position: relative;
@@ -371,5 +350,80 @@
     border-right: none !important;
 }
 /* table start*/
-
+.table {
+  width: 100%;
+  margin-bottom: 0px !important;
+  color: #212529;
+}
+.table-bordered {
+  border: 1px solid black !important;
+}
+.table-wrapper {
+  width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;	
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+.table-title .add-new {
+  float: right;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: none;
+  min-width: 100px;
+  border-radius: 50px;
+  line-height: 13px;
+}
+.table-title .add-new i {
+  margin-right: 2px;
+}
+table.table {
+  table-layout: fixed;
+}
+table.table tr th, table.table tr td {
+  border-color: 1px solid black;
+}
+table.table th i {
+  font-size: 13px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+table.table th:last-child {
+  width: 100px;
+}
+table.table td a {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  min-width: 24px;
+}    
+table.table td a.add {
+  color: #27C46B;
+}
+table.table td i {
+  font-size: 19px;
+}
+table.table td a.add i {
+  font-size: 24px;
+  margin-right: -1px;
+  position: relative;
+  top: 3px;
+}    
+table.table .form-control {
+  height: 32px;
+  line-height: 32px;
+  box-shadow: none;
+  border-radius: 2px;
+}
+table.table .form-control.error {
+  border-color: #f50000;
+}
+table.table td .add {
+  display: none;
+}
   }
