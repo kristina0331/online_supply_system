@@ -68,38 +68,39 @@
                 <a class="dropdown-item" href="#">Department 2</a>
                 <a class="dropdown-item" href="#">Add a Department</a>
               </div>
-              <div class="input-group">
+            </div>
+            <div class="input-group">
                 <div class="input-group-prepend">
                   <span class="input-group-text">Purpose:</span>
                 </div>
                 <textarea class="form-control" aria-label="With textarea"></textarea>
-              </div>
-              <div class="container-lg pt-4">
-                <div class="table-responsive">
+                </div>
+            <div class="container-lg p-4">
+              <div class="table-responsive">
                     <div class="table-wrapper">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>Item No.</th>
-                                    <th>Item Name</th>
-                                    <th>Item Brand/Description</th>
-                                    <th>Quantity</th>
-                                    <th>Price</th>
+                                    <th class="table-bordered thead th">Item No.</th>
+                                    <th class="table-bordered thead th">Item Name</th>
+                                    <th class="table-bordered thead th">Item Brand/Description</th>
+                                    <th class="table-bordered thead th">Quantity</th>
+                                    <th class="table-bordered thead th">Price</th>
                                 </tr>
                             </thead>
                         </table>
                         <div class="col-sm-4 ">
                           <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i></button>
                       </div>
-                    </div>
-                </div>
-            </div> 
-                    </div>
-                </div>  
-            </div>
-            </div>
-          </div>
-        </div>
+                      <div class="col-12 d-flex cart_icon ">
+                        <h2 class="d-flex ">Total Amount: _________</h2> 
+                        <img class="cart_icon d-flex" src="{% static 'images/cart.png' %}" alt="">
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div> 
+        </div> 
       </body>
     </html>
  {% endblock %}
