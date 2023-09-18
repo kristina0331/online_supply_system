@@ -86,7 +86,17 @@
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
     
+    
+    /* Background */
+    background-image: url("/static/images/ctu_loogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-color: #6C757D!important;
+    content-visibility: auto;
   }
+
   .navbar {
     position: relative;
     display: -ms-flexbox;
@@ -103,34 +113,25 @@
 
  } 
   
-  img,
-  svg {
+  .ctu_logo{
     vertical-align: middle;
     height: 220px;
     padding: 3px;
-    margin-left: 1rem;
     display: inline-flex;
   }
   .background{
     position: relative;
     background: linear-gradient(128.43deg, rgba(0, 53, 102, 0.92) 43.98%, rgba(0, 53, 102, 0.899983) 49.22%, rgba(0, 53, 102, 0.867118) 54.74%, rgba(0, 53, 102, 0.845939) 57.59%, rgba(0, 53, 102, 0.7636) 63.96%, rgba(0, 53, 102, 0) 170.25%);
   }
-  .background-image {
-    width: 1064px; /* Set the desired width */
-    height: 1034px; /* Set the desired height */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-    opacity: 80%; /* Set opacity to 50% */
-    left: 440px;
-    top: 10px; /* Set the Y-coordinate */
-    object-fit: cover;
-    position: absolute;
-}
 .image-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.profile_img {
+  height: 170px !important;  
 }
   
   .list-group {
@@ -215,22 +216,6 @@
       min-width: 0;
       width: 100%;
     }
-    .welcome{
-      background-color: #6C757D!important;
-      color: white;
-      text-align: center !important;
-      margin: 0%;
-      font-family: serif;
-      font-size: larger;
-      height: 40px;
-      display: flex;
-      align-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: space-around;
-      visibility: visible;
-      content-visibility: auto;
-    }
     .head {
       color: white;
       font-family: serif;
@@ -241,6 +226,7 @@
       color: white;
       font-family: serif;
       font-size: 25px;
+      text-align: center;
     }
     .d-flex {
         display: -ms-flexbox!important;
@@ -263,46 +249,7 @@
         justify-content: space-evenly;
         padding: 4px !important;
     }
-    .arrow_img {
-        height: 40px;
-        width: 40px;
-        margin: 1rem;
-    }
 
-    /* dropdown */
-   .dropdown {
-    padding-top: 2rem;
-    padding-left: 1rem;
-   }
-   .btn btn-secondary dropdown-toggle{
-    padding: 2rem;
-   }
-   .btn-secondary {
-    color: black;
-    border: 1px solid black;
-    border-radius: 0%;
-    background-color: transparent !important;
-  }
-  .dropdown-menu {
-    background-color: transparent !important;
-    transition: background-color 0.3s ease; /* Add a transition for background-color */
-  }
-
-  .dropdown-menu:hover {
-    background-color: transparent !important;
-  }
-
-  .dropdown-item {
-    color: black !important;
-    transition: color 0.3s ease; /* Add a transition for text color */
-    border: 1px solid black;
-    border-radius: 0%;
-    background-color:  #6C757D;
-  }
-
-  .dropdown-menu:hover .dropdown-item {
-    color: black !important;
-  }
   .input-group{
     padding-top: 2rem;
       position: relative;
@@ -349,102 +296,6 @@
     border-radius: 0%;
     border-right: none !important;
 }
-/* table start*/
-.table {
-  width: 100%;
-  margin-bottom: 0px !important;
-  color: #212529;
-}
-.table-bordered {
-  border: 1px solid black !important;
-  color: white !important;
-  border: 1px solid #000 !important;
-  background: rgba(0, 53, 102, 0.80) !important;
-}
-.table-wrapper {
-  width: 700px;
-  margin: 30px auto;
-  background: #fff;
-  padding: 20px;	
-  box-shadow: 0 1px 1px rgba(0,0,0,.05);
-  border-bottom-width: 2px;
-  border: 2px solid;
-  background: rgba(0, 53, 102, 0.80);
-  color: white;
-}
-.table-title {
-  padding-bottom: 10px;
-  margin: 0 0 10px;
-}
-.table-title .add-new {
-  float: right;
-  height: 30px;
-  font-weight: bold;
-  font-size: 12px;
-  text-shadow: none;
-  min-width: 100px;
-  border-radius: 50px;
-  line-height: 13px;
-}
-.table-title .add-new i {
-  margin-right: 2px;
-}
-table.table {
-  table-layout: fixed;
-}
-table.table tr th, table.table tr td {
-  border-color: 1px solid black;
-}
-table.table th i {
-  font-size: 13px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-table.table th:last-child {
-  width: 100px;
-}
-table.table td a {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 5px;
-  min-width: 24px;
-}    
-table.table td a.add {
-  background-color: white !important;
-}
-table.table td i {
-  font-size: 19px;
-}
-table.table td a.add i {
-  font-size: 24px;
-  margin-right: -1px;
-  position: relative;
-  top: 3px;
-}    
-table.table .form-control {
-  height: 32px;
-  line-height: 32px;
-  box-shadow: none;
-  border-radius: 2px;
-}
-table.table .form-control.error {
-  border-color: #f50000;
-}
-table.table td .add {
-  display: none;
-}
-.btn-info.disabled, .btn-info:disabled {
-  color: black;
-  background-color: white;
-  border-color: black;
-}
-.table-bordered thead th {
-  border-bottom-width: 2px;
-  border: 2px solid;
-  background: rgba(0, 53, 102, 0.80);
-  color: white;
-}
-/* end of table */
 
 .cart_icon {
   height: 40px !important;
@@ -464,8 +315,35 @@ table.table td .add {
   flex-direction: row;
   align-items: baseline !important;
 }
-.cart_icon, .d-flex {
-  height: 40px;
 
-}
   }
+  .cart_icon{
+    height: 40px;
+    color: #000;
+  }
+
+  .dropdown-item{
+    text-align: left;
+  }
+
+  .welcome{
+    background-color: #6C757D!important;
+    color: white;
+    text-align: center !important;
+    margin: 0%;
+    font-family: serif;
+    font-size: larger;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    visibility: visible;
+    content-visibility: auto;
+  }
+
+  .arrow_img {
+    height: 20px;
+    width: 20px;
+}
