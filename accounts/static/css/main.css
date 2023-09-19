@@ -281,15 +281,15 @@
     color: black;
     border: 1px solid black;
     border-radius: 0%;
-    background-color: transparent !important;
+    background-color: #6C757D !important;
   }
   .dropdown-menu {
-    background-color: transparent !important;
+    background-color: #6C757D !important;
     transition: background-color 0.3s ease; /* Add a transition for background-color */
   }
 
   .dropdown-menu:hover {
-    background-color: transparent !important;
+    background-color: #6C757D !important;
   }
 
   .dropdown-item {
