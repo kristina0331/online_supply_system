@@ -10,6 +10,7 @@ $(document).ready(function(){
             '<td><input type="text" class="form-control" name="Item No." id="Item No."></td>' +
             '<td><input type="text" class="form-control" name="Item Name" id="Item Name"></td>' +
             '<td><input type="text" class="form-control" name="Item Brand/Description" id="Item Brand/Description"></td>' +
+			'<td><input type="text" class="form-control" name="Unit" id="Unit"></td>' +
 			'<td><input type="text" class="form-control" name="Quantity" id="Quantity"></td>' +
             '<td><input type="text" class="form-control" name="Price" id="Price"></td>' +
         '</tr>';
