@@ -7,5 +7,5 @@ urlpatterns = [
    path('requester/',views.requester),
    path('products/',views.products),
    path('status/',views.status),
-
+   path('director/',views.director),
 ]

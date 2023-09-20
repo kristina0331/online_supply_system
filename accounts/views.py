@@ -34,3 +34,7 @@ def products(request):
 def status(request):
     
     return render(request, 'accounts/status.html') 
+
+def director(request):
+    return render(request, 'accounts/director_requester.html') 
+
